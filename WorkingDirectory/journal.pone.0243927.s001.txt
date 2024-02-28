@@ -36,23 +36,20 @@
 
 #set working directory and input file name below
 #setwd("C:/Users/ugur/desktop/ileribiyoinformatik")
-#setwd("C:/Users/usr/Documents")
-setwd("D:/Nemalogic_Git_Hub/nemalogic/R-Phylogenetic-analyses/WorkingDirectory")
+setwd("C:/Users/usr/Documents")
 
-fname = "journal.pone.0243927.s002.fas"#You must enter the name of the data set you want to read.
+fname = "S2_Appendix.fas"#You must enter the name of the data set you want to read.
 
 InstallPackages = FALSE
 
 if (InstallPackages) {
 	if (!requireNamespace("BiocManager", quietly=TRUE)) 
-	install.packages("rlang")
-	install.packages("BiocManager")
+		install.packages("BiocManager")
 	BiocManager::install("msa")
-	BiocManager::install("ggtree")
 
 	install.packages("adegenet")
 	install.packages("ape")
-	#install.packages("ggtree")
+	install.packages("ggtree")
 	install.packages("ggplot2")
 	install.packages("ips")
 	install.packages("bios2mds")
